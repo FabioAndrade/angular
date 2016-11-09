@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app ng-init="valor1 = 5; valor2 = 10; pessoa = { nome : 'Fulano de Tal' }">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso AngularJS</title>
+    <script src="angular/angular.min.js"></script>
+</head>
+<body>
+    <h4 ng-bind="valor1"></h4>
+    <h4 ng-bind="valor2"></h4>
+    <h4 ng-bind="valor1 - valor2"></h4>
+    <h4 ng-bind="pessoa.nome"></h4>
+
+    <!-- Se demorar a carregar as bibliotecas angular, pode ser que apareça as chaves duplas para o usuário. -->
+    <h1>{{ valor1 + valor2 }}</h1>
+    {{ pessoa.nome }}
+
+    <br><br><br><br>
+
+    <input type="text" ng-model="pessoa.nome" />
+    <input type="number" ng-model="valor1" />
+    <input type="number" ng-model="valor2" />
+</body>
+</html>
