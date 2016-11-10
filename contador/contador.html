@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+</head>
+<body ng-controller="countController">
+    <a href="#" ng-click="addOne()" >Add 1</a>
+    <hr/>
+    <p>Counter value: {{ counter }}</p>
+
+    <script src="../js/angular/angular.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="countController.js"></script>
+</body>
+</html>

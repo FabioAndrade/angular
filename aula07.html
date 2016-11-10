@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="app" >
+<head>
+    <meta charset="UTF-8">
+    <title>Curso AngularJS</title>
+</head>
+<body ng-controller="aula07Controller">
+
+    <input type="text" ng-model="nome">
+    <button type="button" ng-click="addNome({{ nome }})">Inserir nome</button>
+
+    <div>
+        <p> {{ nomes }}</p>
+    </div>
+
+    <script src="js/angular/angular.min.js"></script>
+    <script src="js/app.module.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/aula07Controller.js"></script>
+</body>
+</html>
