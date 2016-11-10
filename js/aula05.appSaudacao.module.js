@@ -4,4 +4,8 @@
 
 var appSaudacao = angular.module('appSaudacao', []);
 
-app.Saudacao.
+appSaudacao.filter('hello', function(){
+    return function (nome) {
+        return 'Olá ' + nome;
+    }
+});
